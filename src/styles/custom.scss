@@ -1,0 +1,151 @@
+
+
+// Import Bootstrap first
+@import '~bootstrap/scss/bootstrap';
+
+// Custom variables
+$primary: #4cdbdb;
+$secondary: #070b35;
+$dark-blue: #0a1939;
+$teal: #0e4b4f;
+$brand-color: #020216;
+
+// Global styles
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #020216;
+}
+
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+p{
+    font-size: 25px;
+}
+.cust-bg{
+background-color: #090925;
+}
+
+// Utility classes
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.hover-text-white {
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: white !important;
+  }
+}
+
+// Button overrides
+.btn {
+  border-radius: 50px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+  &-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $secondary;
+    
+    &:hover {
+      background-color: darken($primary, 10%);
+      border-color: darken($primary, 10%);
+    }
+  }
+  
+  &-outline-primary {
+    border-color: $primary;
+    color: $primary;
+    
+    &:hover {
+      background-color: $primary;
+      color: $secondary;
+    }
+  }
+}
+
+// Navbar overrides
+.navbar {
+  transition: all 0.3s ease;
+  
+  .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: $primary !important;
+    }
+  }
+}
+
+// Custom styles for cards
+.value-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Gradient backgrounds
+.bg-gradient-primary {
+  background: linear-gradient(45deg, $secondary, $dark-blue);
+}
+
+.bg-gradient-secondary {
+  background: linear-gradient(45deg, $teal, darken($teal, 10%));
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: calc(1.8rem + 1.5vw);
+  }
+  
+  .display-5, .display-6 {
+    font-size: calc(1.4rem + 1.2vw);
+  }
+}
+
+// Additional customizations
+.rounded-xl {
+  border-radius: 1rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+// Custom spacing
+.section-spacing {
+  padding: 6rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding: 4rem 0;
+  }
+}

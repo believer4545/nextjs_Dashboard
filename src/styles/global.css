@@ -1,0 +1,96 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #090925;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+p{
+  font-size: 25px;
+}
+
+.pics-bg{
+  background-color: #090925;
+}
+.Whoare{
+  max-width: 700px;
+  h2{
+    color: #8BF1FF;
+  }
+}
+.ourValue{
+  color: #D6DAF0;
+  font-size: 18px;
+  line-height: 28px;
+}
+.ourValueDesc{
+color: #D7D9FF;
+font-size: 18px;
+}
+.join-btn{
+  width: 348px !important;
+  font-size: 25px;
+  padding: 19px 0px 19px 0px;
+  border-radius: 25px !important;
+  border: 1px solid#93F2FF !important;
+  margin-bottom: 18px;
+}
+.footer-section{
+  padding-bottom: 1rem;
+  padding-top: 117px;
+  background-color: #10102B;
+}
+.cotact-info{
+color: #D7D9FF;
+}
+.why-pica-border{
+  border-style: dashed  !important;
+  color: #93F2FF;
+  border-width: 2px;
+  position: absolute;
+  width: 119px;
+  height: 119px;
+  left: 83px;
+  top: 50%;
+  transform: translateY(-80%);
+}
+
+.footer-border{
+  border: 2px solid #FFFFFF1A;
+  padding-top: 4px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+    border: 2px solid #FFFFFF1A;
+}
+@media (max-width: 576px) {
+  .footer-section .d-flex {
+    /* flex-direction: column; */
+    /* align-items: center !important; */
+    text-align: center;
+  }
+  .footer-section{
+    padding-left: 4px;
+  }
+  .footer-border {
+    display: inline-block;
+  }
+}
